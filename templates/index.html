@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block title %}TaskMate | Study smarter{% endblock %}
+{% block content %}<section class="hero p-5 rounded-4">
+<div class="row align-items-center"><div class="col-lg-7"><span class="badge text-bg-primary mb-3">STUDENT PRODUCTIVITY</span>
+<h1 class="display-5 fw-bold">Take control of your academic tasks.</h1><p class="lead text-secondary mt-3">Organise assignments, track deadlines and keep your academic work moving forward — all in one place.</p>
+<a class="btn btn-primary btn-lg mt-2 me-2" href="{{ url_for('register') }}">Create free account</a><a class="btn btn-outline-dark btn-lg mt-2" href="{{ url_for('login') }}">Sign in</a></div>
+<div class="col-lg-5 mt-4 mt-lg-0"><div class="preview-card"><div class="d-flex justify-content-between"><strong>My study plan</strong><span class="text-success">● On track</span></div>
+<div class="progress my-4" style="height:10px"><div class="progress-bar" style="width:70%"></div></div>
+<div class="task-line"><span class="dot blue"></span> Complete IT assignment <span class="ms-auto text-muted">Today</span></div>
+<div class="task-line"><span class="dot orange"></span> Prepare presentation <span class="ms-auto text-muted">Tomorrow</span></div>
+<div class="task-line"><span class="dot green"></span> Review lecture notes <span class="ms-auto text-muted">Friday</span></div></div></div></div></section>
+<div class="row g-3 mt-3"><div class="col-md-4"><div class="feature"><h5>Plan</h5><p>Record assignments and set due dates.</p></div></div><div class="col-md-4"><div class="feature"><h5>Prioritise</h5><p>Identify high-priority academic work.</p></div></div><div class="col-md-4"><div class="feature"><h5>Track</h5><p>See what is pending and what is complete.</p></div></div></div>{% endblock %}

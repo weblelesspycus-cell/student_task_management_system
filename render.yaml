@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: student-task-management-system
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_PATH
+        value: /var/data/tasks.db
+    disk:
+      name: task-data
+      mountPath: /var/data
+      sizeGB: 1
